@@ -153,7 +153,7 @@ keymap ZQ NULL
 
 ########## command ##########
 keymap :: COMMAND
-keymap :H HELP
+keymap :h HELP
 keymap :O OPTIONS
 keymap :d DOWNLOAD_LIST
 
@@ -161,27 +161,28 @@ keymap :d DOWNLOAD_LIST
 keymap L NEXT
 keymap H PREV
 keymap :p SELECT_MENU
-keymap :h HISTORY
+keymap :H HISTORY
 
 ########## scrolling ##########
 keymap C-e UP
 keymap C-y DOWN
 keymap gg BEGIN
 keymap G END
+keymap SPC NEXT_PAGE
 keymap C-d NEXT_PAGE
 keymap d NEXT_PAGE
 keymap C-u PREV_PAGE
 keymap u PREV_PAGE
 keymap zz CENTER_V
 ########## cursor ##########
-#keymap l MOVE_RIGHT
-keymap l NEXT_TAB
-#keymap h MOVE_LEFT
-keymap h PREV_TAB
-#keymap j MOVE_DOWN1
-keymap j UP
-#keymap k MOVE_UP1
-keymap k DOWN
+keymap h MOVE_LEFT
+keymap j MOVE_DOWN1
+keymap k MOVE_UP1
+keymap l MOVE_RIGHT
+#keymap h PREV_TAB
+#keymap j UP
+#keymap k DOWN
+#keymap l NEXT_TAB
 keymap RIGHT MOVE_RIGHT
 keymap LEFT MOVE_LEFT
 keymap DOWN MOVE_DOWN1
@@ -196,6 +197,7 @@ keymap C-o UNDO
 ########## navigation ##########
 keymap f MOVE_LIST_MENU
 keymap F LIST_MENU
+keymap TAB NEXT_LINK
 keymap C-n NEXT_LINK
 keymap C-p PREV_LINK
 keymap :l PEEK_LINK
@@ -246,5 +248,6 @@ keymap T TAB_MENU
 ########## quit ##########
 keymap ZZ EXIT
 keymap C-Q EXIT
+keymap Q EXIT
 keymap ZQ QUIT
 keymap :q QUIT
